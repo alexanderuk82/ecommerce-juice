@@ -1,0 +1,6 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixin" as *;
+
+.btn__slider {
+  @include button(slider);
+}

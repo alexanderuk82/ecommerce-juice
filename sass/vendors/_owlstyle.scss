@@ -1,0 +1,12 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixin" as *;
+
+//style dots navigate
+
+.owl-dot.active > span {
+  background-color: var(--orange) !important;
+}
+.owl-dot > span {
+  border: 2px solid var(--orange) !important;
+  background-color: transparent !important;
+}

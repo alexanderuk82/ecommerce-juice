@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===style for icons CDN fonts== -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+    />
+
+    <!-- Styles for Owl carrousel -->
+
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css" />
+
+    <!-- My main CSs styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="topbar">
+        <div class="topbar__container">
+          <div class="topbar__info">
+            <i class="zmdi zmdi-phone"></i>
+            <div class="topbar__info--text">
+              <a href="callto:+44234456798941">(+44) 234 456 7891</a>
+              <small>Mon-Sun(08:00 to 19:00)</small>
+            </div>
+          </div>
+          <div class="topbar__right">
+            <a href="#" class="topbar__right__icon">
+              <i class="zmdi zmdi-search"></i>
+            </a>
+            <a href="#" class="topbar__right__icon">
+              <i class="zmdi zmdi-favorite"></i>
+            </a>
+            <a href="#" class="topbar__right__icon">
+              <i class="zmdi zmdi-shopping-cart"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <div class="navbar__container">
+          <a href="#home" class="navbar__logo">
+            <img src="images/Logo.svg" alt="logo-main" />
+          </a>
+          <button class="navbar__menu">
+            <i class="zmdi zmdi-menu"></i>
+          </button>
+        </div>
+      </nav>
+
+      <section class="slider">
+        <div class="slider__container">
+          <div class="owl-carousel owl-theme">
+            <div class="item slide slide--1">
+              <p>drink fresh live fresh</p>
+              <h1 class="h1">
+                fruit juice
+
+                <span class="h2">Good for Health</span>
+              </h1>
+              <button class="btn__slider mtbmd">read more</button>
+              <img src="images/image-slider-oramge.png" alt="" />
+            </div>
+            <div class="item slide slide--2">
+              <p>drink fresh live fresh</p>
+              <h1 class="h1">
+                fruit juice
+
+                <span class="h2">Good for Health</span>
+              </h1>
+              <button class="btn__slider mtbmd">read more</button>
+              <img src="images/image-slider-oramge.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Inserting script ofr Owl carrousel -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="dist/owl.carousel.min.js"></script>
+
+    <!-- My own javascript code -->
+    <script src="main.js"></script>
+  </body>
+</html>

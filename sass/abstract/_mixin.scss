@@ -1,0 +1,73 @@
+@use "../abstract/variables" as *;
+
+//COLOR BACKGROUND SLIDER
+// Control of the font styles
+
+@mixin background($slide) {
+  @if $slide == 1 {
+    background: linear-gradient(var(--gradient-orange));
+  }
+  @if $slide == 2 {
+    background: linear-gradient(var(--gradient-green));
+  }
+}
+
+@mixin fontStyle($name, $Weight, $color) {
+  font-size: map-get($fontSize, $name);
+  font-weight: map-get($fontWeight, $Weight);
+
+  @if $color == main {
+    color: var(--links-menu);
+  }
+
+  @if $name == h1 {
+    font-family: var(--titles);
+    text-transform: uppercase;
+    color: map-get($fontColor, $color);
+    line-height: 3.42rem;
+  }
+  @if $name == h2 {
+    font-family: var(--titles);
+    text-transform: uppercase;
+    color: map-get($fontColor, $color);
+  }
+
+  @if ($name == smallTxt) {
+    font-family: var(--smallTitles);
+    text-transform: capitalize;
+    color: map-get($fontColor, $color);
+  }
+}
+
+@mixin notify {
+  :after {
+    content: "0";
+    background-color: var(--green);
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #fff;
+    border: 1px solid var(--light-gray);
+    display: flex;
+    align-items: center;
+    @include fontStyle(small, regular, main);
+    border-radius: 100%;
+    position: absolute;
+    top: 9px;
+    right: -1rem;
+    justify-content: center;
+  }
+}
+
+// Different control of BTNS
+
+@mixin button($name) {
+  padding: 1rem 1.2rem;
+  text-transform: uppercase;
+  font-size: map-get($fontSize, small);
+  border: none;
+
+  @if $name == slider {
+    background-color: var(--orange);
+    color: #fff;
+  }
+}
