@@ -1,0 +1,38 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixin" as *;
+
+.categories {
+  &__container {
+    @extend %container;
+    @extend %dGrid;
+    @extend %gridResponsiveCateg;
+
+    div:nth-child(1) {
+      @include categories(1);
+    }
+    div:nth-child(2) {
+      @include categories(2);
+    }
+    div:nth-child(3) {
+      @include categories(3);
+    }
+    div:nth-child(4) {
+      @include categories(4);
+    }
+  }
+
+  &__box {
+    border-radius: 0.5rem;
+    padding: 2rem 1.2rem;
+    @extend %dFlexVerticalBox;
+
+    .h4 {
+      @include fontStyle(h4, bold, w);
+      z-index: 10;
+    }
+
+    p {
+      @include fontStyle(boxTxt, italic, w);
+    }
+  }
+}

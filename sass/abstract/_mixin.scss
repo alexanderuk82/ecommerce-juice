@@ -1,7 +1,6 @@
 @use "../abstract/variables" as *;
 
 //COLOR BACKGROUND SLIDER
-// Control of the font styles
 
 @mixin background($slide) {
   @if $slide == 1 {
@@ -12,6 +11,28 @@
   }
 }
 
+//CONTENT SLIDER
+@mixin contentSlider($slider) {
+  p {
+    @include fontStyle(smallTxt, regular, w);
+  }
+  .h2 {
+    @include fontStyle(h2, bold, w);
+  }
+
+  @if $slider == 1 {
+    .h1 {
+      @include fontStyle(h1, bold, g);
+    }
+  }
+  @if $slider == 2 {
+    .h1 {
+      @include fontStyle(h1, bold, o);
+    }
+  }
+}
+
+// GENERAL FONT MANAGEMENT
 @mixin fontStyle($name, $Weight, $color) {
   font-size: map-get($fontSize, $name);
   font-weight: map-get($fontWeight, $Weight);
@@ -31,13 +52,28 @@
     text-transform: uppercase;
     color: map-get($fontColor, $color);
   }
+  @if $name == h4 {
+    font-family: var(--titles);
+    text-transform: uppercase;
+    color: map-get($fontColor, $color);
+  }
 
   @if ($name == smallTxt) {
     font-family: var(--smallTitles);
     text-transform: capitalize;
     color: map-get($fontColor, $color);
   }
+
+  @if ($name == boxTxt) {
+    font-family: var(--main-font);
+    color: map-get($fontColor, $color);
+    font-style: map-get($fontStyle, $Weight);
+    line-height: 2rem;
+    z-index: 10;
+  }
 }
+
+//NOTIFICATIONS CART AND WHISLIST
 
 @mixin notify {
   :after {
@@ -61,7 +97,7 @@
 // Different control of BTNS
 
 @mixin button($name) {
-  padding: 1rem 1.2rem;
+  padding: 1rem;
   text-transform: uppercase;
   font-size: map-get($fontSize, small);
   border: none;
@@ -69,5 +105,59 @@
   @if $name == slider {
     background-color: var(--orange);
     color: #fff;
+  }
+  @if $name == main {
+    background-color: #fff;
+    color: map-get($fontColor, g);
+  }
+}
+
+//BOXES CATEGORIES
+
+@mixin categories($box) {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0.78;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+  }
+  @if $box == 1 {
+    background-image: url(../images/dessert.jpg);
+
+    &::after {
+      background-color: var(--fruit-box);
+    }
+  }
+  @if $box == 2 {
+    background-image: url(../images/vegi-salad.jpg);
+
+    &::after {
+      background-color: var(--vegi-box);
+    }
+  }
+  @if $box == 3 {
+    background-image: url(../images/fast-food.jpg);
+
+    &::after {
+      background-color: var(--ffood-box);
+    }
+  }
+  @if $box == 4 {
+    background-image: url(../images/dessert.jpg);
+
+    &::after {
+      background-color: var(--dessert-box);
+    }
   }
 }

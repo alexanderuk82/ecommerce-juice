@@ -13,6 +13,7 @@ html {
 }
 
 body {
+  font-size: map-get($fontSize, body);
   font-family: var(--main-font);
   @include fontStyle(body, regular, main);
 }

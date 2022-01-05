@@ -79,32 +79,13 @@
       padding: 0 1rem;
       padding-top: 3rem;
 
-      &__content {
-      }
-
       &--1 {
         @include background(1);
-        p {
-          @include fontStyle(smallTxt, regular, w);
-        }
-        .h1 {
-          @include fontStyle(h1, bold, g);
-        }
-        .h2 {
-          @include fontStyle(h2, bold, w);
-        }
+        @include contentSlider(1);
       }
       &--2 {
         @include background(2);
-        p {
-          @include fontStyle(smallTxt, regular, w);
-        }
-        .h1 {
-          @include fontStyle(h1, bold, o);
-        }
-        .h2 {
-          @include fontStyle(h2, bold, w);
-        }
+        @include contentSlider(2);
       }
     }
   }

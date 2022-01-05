@@ -23,7 +23,7 @@
     #7ad024 80.61%, #3ec816 90.94%, #09c01b 100%;
 }
 
-.header .navbar__container, .header .slider {
+.categories__container, .header .navbar__container, .header .slider {
   padding: 1rem 3rem;
 }
 
@@ -33,8 +33,28 @@
   align-items: center;
 }
 
+.categories__container {
+  display: grid;
+}
+
+.categories__box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+.categories__container {
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+}
+
 .mtbmd {
   margin: 2rem 0;
+}
+
+.mtblg {
+  margin: 5rem 0;
 }
 
 .mtmd {
@@ -53,8 +73,9 @@ html {
 }
 
 body {
+  font-size: 1.5rem;
   font-family: var(--main-font);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: var(--links-menu);
 }
@@ -169,6 +190,13 @@ body {
   text-transform: capitalize;
   color: #fff;
 }
+.header .slider .slide--1 .h2 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  font-family: var(--titles);
+  text-transform: uppercase;
+  color: #fff;
+}
 .header .slider .slide--1 .h1 {
   font-size: 4.4rem;
   font-weight: 700;
@@ -176,13 +204,6 @@ body {
   text-transform: uppercase;
   color: var(--green);
   line-height: 3.42rem;
-}
-.header .slider .slide--1 .h2 {
-  font-size: 2.7rem;
-  font-weight: 700;
-  font-family: var(--titles);
-  text-transform: uppercase;
-  color: #fff;
 }
 .header .slider .slide--2 {
   background: linear-gradient(var(--gradient-green));
@@ -194,6 +215,13 @@ body {
   text-transform: capitalize;
   color: #fff;
 }
+.header .slider .slide--2 .h2 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  font-family: var(--titles);
+  text-transform: uppercase;
+  color: #fff;
+}
 .header .slider .slide--2 .h1 {
   font-size: 4.4rem;
   font-weight: 700;
@@ -202,21 +230,134 @@ body {
   color: var(--orange);
   line-height: 3.42rem;
 }
-.header .slider .slide--2 .h2 {
-  font-size: 2.7rem;
+
+.categories__container div:nth-child(1) {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/dessert.jpg);
+}
+.categories__container div:nth-child(1)::after {
+  content: "";
+  top: 0;
+  left: 0;
+  opacity: 0.78;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+.categories__container div:nth-child(1)::after {
+  background-color: var(--fruit-box);
+}
+.categories__container div:nth-child(2) {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/vegi-salad.jpg);
+}
+.categories__container div:nth-child(2)::after {
+  content: "";
+  top: 0;
+  left: 0;
+  opacity: 0.78;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+.categories__container div:nth-child(2)::after {
+  background-color: var(--vegi-box);
+}
+.categories__container div:nth-child(3) {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/fast-food.jpg);
+}
+.categories__container div:nth-child(3)::after {
+  content: "";
+  top: 0;
+  left: 0;
+  opacity: 0.78;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+.categories__container div:nth-child(3)::after {
+  background-color: var(--ffood-box);
+}
+.categories__container div:nth-child(4) {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/dessert.jpg);
+}
+.categories__container div:nth-child(4)::after {
+  content: "";
+  top: 0;
+  left: 0;
+  opacity: 0.78;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+.categories__container div:nth-child(4)::after {
+  background-color: var(--dessert-box);
+}
+.categories__box {
+  border-radius: 0.5rem;
+  padding: 2rem 1.2rem;
+}
+.categories__box .h4 {
+  font-size: 1.6rem;
   font-weight: 700;
   font-family: var(--titles);
   text-transform: uppercase;
   color: #fff;
+  z-index: 10;
+}
+.categories__box p {
+  font-size: 1.5rem;
+  font-family: var(--main-font);
+  color: #fff;
+  font-style: italic;
+  line-height: 2rem;
+  z-index: 10;
 }
 
 .btn__slider {
-  padding: 1rem 1.2rem;
+  padding: 1rem;
   text-transform: uppercase;
   font-size: 1rem;
   border: none;
   background-color: var(--orange);
   color: #fff;
+  z-index: 10;
+}
+
+.btn__main {
+  padding: 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: none;
+  background-color: #fff;
+  color: var(--green);
+  z-index: 10;
 }
 
 .owl-dot.active > span {

@@ -45,14 +45,20 @@ $fontWeight: (
   "bold": 700,
 );
 
+$fontStyle: (
+  "italic": italic,
+);
+
 $fontSize: (
-  "body": 1.4rem,
+  "body": 1.5rem,
   "small": 1rem,
   "icons": 2.2rem,
   "btnMenu": 3.4rem,
   "smallTxt": 2.1rem,
+  "boxTxt": 1.5rem,
   "h1": 4.4rem,
   "h2": 2.7rem,
+  "h4": 1.6rem,
 );
 
 $fontColor: (
@@ -70,9 +76,27 @@ $fontColor: (
   justify-content: space-between;
   align-items: center;
 }
+%dGrid {
+  display: grid;
+}
+
+%dFlexVerticalBox {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+%gridResponsiveCateg {
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+}
 
 .mtbmd {
   margin: 2rem 0;
+}
+.mtblg {
+  margin: 5rem 0;
 }
 .mtmd {
   margin-top: 2rem;
