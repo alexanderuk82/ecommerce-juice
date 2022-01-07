@@ -58,6 +58,12 @@
     color: map-get($fontColor, $color);
   }
 
+  @if $name == h3 {
+    font-family: var(--titles);
+    text-transform: uppercase;
+    color: map-get($fontColor, $color);
+  }
+
   @if ($name == smallTxt) {
     font-family: var(--smallTitles);
     text-transform: capitalize;
@@ -101,6 +107,10 @@
   text-transform: uppercase;
   font-size: map-get($fontSize, small);
   border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   @if $name == slider {
     background-color: var(--orange);

@@ -1,0 +1,46 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixin" as *;
+
+.title {
+  @extend %dflex;
+  position: relative;
+  h3 {
+    @include fontStyle(h3, bold, main);
+  }
+
+  .divider {
+    width: 66%;
+    height: 1.5px;
+    background-color: var(--light-gray);
+    position: absolute;
+    bottom: -1rem;
+
+    &::before {
+      content: "";
+      width: 73%;
+      height: 2px;
+      background-color: var(--green);
+      position: absolute;
+    }
+  }
+  i {
+    font-size: map-get($fontSize, icons);
+  }
+  span {
+    font-size: map-get($fontSize, small);
+  }
+
+  &__option {
+    @extend %dflex;
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    &:hover {
+      cursor: pointer;
+    }
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+}

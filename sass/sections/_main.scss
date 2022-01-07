@@ -1,0 +1,80 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixin" as *;
+
+.main {
+  &__top {
+    @extend %container;
+  }
+
+  &__content {
+    @extend %container;
+    @extend %dGrid;
+    @extend %gridResponsiveCateg;
+    row-gap: 9rem;
+  }
+
+  &__item {
+    width: 16rem;
+    height: 15rem;
+    position: relative;
+    transition: all 0.3s linear;
+    overflow-x: clip;
+
+    &:hover .main__icons {
+      transform: translateX(0);
+    }
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-120%);
+    transition: all 0.3s linear;
+
+    & > * {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__link {
+      font-size: map-get($fontSize, smallTxt);
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+  &__description {
+    margin-top: 1rem;
+    @extend %dGrid;
+    row-gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    .titleProduct {
+      font-weight: map-get($fontWeight, bold);
+      font-size: map-get($fontSize, product);
+    }
+  }
+
+  &__pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__separator {
+    width: 6rem;
+    height: 3px;
+    background-color: var(--orange);
+    margin: 0 auto;
+  }
+}
