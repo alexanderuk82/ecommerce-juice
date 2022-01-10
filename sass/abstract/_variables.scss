@@ -67,6 +67,7 @@ $fontColor: (
   "w": #fff,
   "g": var(--green),
   "o": var(--orange),
+  "y": var(--vegi-box),
 );
 
 // GENERAL CLASSES
@@ -76,6 +77,13 @@ $fontColor: (
 %dflex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+%dflexCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 %dGrid {
@@ -102,4 +110,14 @@ $fontColor: (
 }
 .mtmd {
   margin-top: 2rem;
+}
+
+//Margin and space to use on @extend
+
+%mTopsm {
+  margin-top: 3rem;
+}
+
+%mTopXl {
+  margin-top: 13rem;
 }

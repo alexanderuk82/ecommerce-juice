@@ -23,13 +23,20 @@
     #7ad024 80.61%, #3ec816 90.94%, #09c01b 100%;
 }
 
-.main__top, .main__content, .categories__container, .header .navbar__container, .header .slider {
+.signature__container, .main__top, .main__content, .categories__container, .header .navbar__container, .header .slider {
   padding: 1rem 3rem;
 }
 
-.title, .title__option, .header .navbar__container {
+.title, .title__option, .signature__sign, .header .navbar__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.signature__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -59,6 +66,14 @@
 
 .mtmd {
   margin-top: 2rem;
+}
+
+.signature__sign {
+  margin-top: 3rem;
+}
+
+.signature {
+  margin-top: 13rem;
 }
 
 * {
@@ -397,6 +412,48 @@ body {
   height: 3px;
   background-color: var(--orange);
   margin: 0 auto;
+}
+
+.signature {
+  background-image: url(/images/bg-welcome.jpg);
+  background-position: -18rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem 0;
+  color: #fff;
+}
+.signature__smallTitle {
+  font-family: var(--smallTitles);
+  font-size: 2.7rem;
+  color: var(--orange);
+  text-transform: capitalize;
+  line-height: 4rem;
+}
+.signature .h2 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  font-family: var(--titles);
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+}
+.signature .h2 span {
+  font-size: 1.6rem;
+  margin-right: 1rem;
+}
+.signature__text {
+  line-height: 2.5rem;
+  letter-spacing: 0.5px;
+  margin-top: 1rem;
+}
+.signature__name small:nth-child(1) {
+  color: var(--green);
+  font-family: var(--smallTitles);
+  font-size: 2.1rem;
+}
+.signature__name small:nth-child(2) {
+  font-size: 1.3rem;
+  text-transform: capitalize;
 }
 
 .title {

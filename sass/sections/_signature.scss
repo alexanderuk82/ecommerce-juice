@@ -1,0 +1,56 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixin" as *;
+
+.signature {
+  @extend %mTopXl;
+  background-image: url(/images/bg-welcome.jpg);
+  background-position: -18rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem 0;
+  color: #fff;
+  &__container {
+    @extend %container;
+  }
+
+  &__smallTitle {
+    font-family: var(--smallTitles);
+    font-size: map-get($fontSize, h2);
+    color: map-get($fontColor, o);
+    text-transform: capitalize;
+    line-height: 4rem;
+  }
+
+  .h2 {
+    @include fontStyle(h2, bold, w);
+    display: flex;
+    span {
+      font-size: map-get($fontSize, h4);
+      margin-right: 1rem;
+    }
+  }
+
+  &__text {
+    line-height: 2.5rem;
+    letter-spacing: 0.5px;
+    margin-top: 1rem;
+  }
+
+  &__sign {
+    @extend %dflex;
+    @extend %mTopsm;
+  }
+
+  &__name {
+    @extend %dflexCol;
+    small:nth-child(1) {
+      color: map-get($fontColor, g);
+      font-family: var(--smallTitles);
+      font-size: map-get($fontSize, smallTxt);
+    }
+    small:nth-child(2) {
+      font-size: map-get($fontSize, product);
+      text-transform: capitalize;
+    }
+  }
+}
