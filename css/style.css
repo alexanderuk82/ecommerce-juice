@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Signika:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Signika:wght@300;400;500;700&display=swap");
 :root {
   --main-font: "Roboto", sans-serif;
   --titles: "Signika", sans-serif;
@@ -23,11 +23,11 @@
     #7ad024 80.61%, #3ec816 90.94%, #09c01b 100%;
 }
 
-.signature__container, .main__top, .main__content, .categories__container, .header .navbar__container, .header .slider {
+.countdown__container, .topDeals__items, .signature__container, .main__top, .main__content, .categories__container, .header .navbar__container, .header .slider {
   padding: 1rem 3rem;
 }
 
-.title, .title__option, .signature__sign, .header .navbar__container {
+.title, .title__option, .countdown__timer, .signature__sign, .header .navbar__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,7 +40,7 @@
   align-items: center;
 }
 
-.main__content, .main__description, .categories__container {
+.topDeals__items, .main__content, .main__description, .categories__container {
   display: grid;
 }
 
@@ -64,11 +64,15 @@
   margin: 5rem 0;
 }
 
+.mtbxl {
+  margin: 9rem 0;
+}
+
 .mtmd {
   margin-top: 2rem;
 }
 
-.signature__sign {
+.countdown__timer, .signature__sign {
   margin-top: 3rem;
 }
 
@@ -76,6 +80,16 @@
   margin-top: 13rem;
 }
 
+.countdown__container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/*
+!Create Random stars review for products
+
+!TESTING
+*/
 * {
   margin: 0;
   padding: 0;
@@ -453,6 +467,97 @@ body {
 }
 .signature__name small:nth-child(2) {
   font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.topDeals__items {
+  row-gap: 3rem;
+}
+.topDeals__item {
+  width: 100%;
+  height: 11rem;
+  display: flex;
+}
+.topDeals__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.topDeals__description {
+  width: 100%;
+  display: grid;
+  align-content: start;
+  row-gap: 1rem;
+  margin-left: 1.3rem;
+}
+.topDeals .review {
+  color: var(--green);
+}
+.topDeals__title {
+  font-weight: 900;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.topDeals__prices span:nth-of-type(1) {
+  color: var(--links-footer);
+  position: relative;
+}
+.topDeals__prices span:nth-of-type(1):before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--links-footer);
+  position: absolute;
+  top: 7px;
+}
+.topDeals__prices span:nth-of-type(2) {
+  color: var(--orange);
+  font-size: 1.4rem;
+}
+
+.countdown {
+  background-image: url(/images/bg-deeal.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.countdown__container {
+  text-align: center;
+}
+.countdown__title {
+  font-family: var(--smallTitles);
+  font-size: 2.7rem;
+  color: var(--orange);
+  text-transform: uppercase;
+}
+.countdown h1 {
+  font-size: 4.4rem;
+  font-weight: 400;
+  font-family: var(--titles);
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 3.42rem;
+}
+.countdown__textOffer {
+  letter-spacing: 0.15rem;
+  line-height: 1.3rem;
+  padding: 2rem 0;
+  margin: 2rem 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.countdown__box {
+  background-color: var(--green);
+  border-top: 4px solid var(--orange);
+  padding: 1.5rem;
+}
+.countdown__h2 {
+  font-size: 2.7rem;
+}
+.countdown__text {
+  font-weight: normal;
   text-transform: capitalize;
 }
 

@@ -43,6 +43,7 @@ $fontWeight: (
   "regular": 400,
   "medium": 500,
   "bold": 700,
+  "extrabold": 900,
 );
 
 $fontStyle: (
@@ -53,6 +54,7 @@ $fontSize: (
   "body": 1.5rem,
   "product": 1.3rem,
   "small": 1rem,
+  "price": 1.4rem,
   "icons": 2.2rem,
   "btnMenu": 3.4rem,
   "smallTxt": 2.1rem,
@@ -108,6 +110,9 @@ $fontColor: (
 .mtblg {
   margin: 5rem 0;
 }
+.mtbxl {
+  margin: 9rem 0;
+}
 .mtmd {
   margin-top: 2rem;
 }
@@ -120,4 +125,9 @@ $fontColor: (
 
 %mTopXl {
   margin-top: 13rem;
+}
+
+%ptblg {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }

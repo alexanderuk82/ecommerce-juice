@@ -1,0 +1,53 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixin" as *;
+
+.countdown {
+  background-image: url(/images/bg-deeal.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  &__container {
+    @extend %container;
+    @extend %ptblg;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: var(--smallTitles);
+    font-size: map-get($fontSize, h2);
+    color: map-get($fontColor, o);
+    text-transform: uppercase;
+  }
+  h1 {
+    @include fontStyle(h1, regular, w);
+  }
+
+  &__textOffer {
+    letter-spacing: 0.15rem;
+    line-height: 1.3rem;
+    padding: 2rem 0;
+    margin: 2rem 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+
+  &__timer {
+    @extend %mTopsm;
+    @extend %dflex;
+  }
+
+  &__box {
+    background-color: var(--green);
+    border-top: 4px solid var(--orange);
+    padding: 1.5rem;
+  }
+  &__h2 {
+    font-size: map-get($fontSize, h2);
+  }
+
+  &__text {
+    font-weight: normal;
+    text-transform: capitalize;
+  }
+}

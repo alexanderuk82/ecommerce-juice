@@ -171,3 +171,34 @@
     }
   }
 }
+
+/*
+!Create Random stars review for products
+
+!TESTING
+*/
+// @mixin star {
+//   .zmdi.zmdi-star:before {
+//     content: "\f27d";
+//   }
+//   .zmdi.zmdi-star:after {
+//     content: "";
+//   }
+// }
+
+// // $min: 1;
+// // $max: 5;
+
+// // @function randomStar($min, $max) {
+// //   $rand: random();
+
+// //   $randomStar: $min + floor($rand * (($max - $min) + 1));
+
+// //   @return $randomStar;
+// // }
+
+// @mixin generateStar($min, $max) {
+//   @for $i from $min through $max {
+//     @include star;
+//   }
+// }
