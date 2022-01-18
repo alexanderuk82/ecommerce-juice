@@ -23,7 +23,7 @@
     #7ad024 80.61%, #3ec816 90.94%, #09c01b 100%;
 }
 
-.countdown__container, .topDeals__items, .signature__container, .main__top, .main__content, .categories__container, .header .navbar__container, .header .slider {
+.ourServices__container, .countdown__container, .topDeals__items, .signature__container, .main__top, .main__content, .categories__container, .header .navbar__container, .header .slider {
   padding: 1rem 3rem;
 }
 
@@ -40,7 +40,7 @@
   align-items: center;
 }
 
-.topDeals__items, .main__content, .main__description, .categories__container {
+.ourServices__content, .topDeals__items, .main__content, .main__description, .categories__container {
   display: grid;
 }
 
@@ -51,7 +51,7 @@
   gap: 1rem;
 }
 
-.main__content, .categories__container {
+.ourServices__content, .main__content, .categories__container {
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 2rem;
 }
@@ -76,11 +76,15 @@
   margin-top: 3rem;
 }
 
+.ourServices__content {
+  margin-top: 5rem;
+}
+
 .signature {
   margin-top: 13rem;
 }
 
-.countdown__container {
+.ourServices, .ourServices__container, .countdown__container {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -559,6 +563,49 @@ body {
 .countdown__text {
   font-weight: normal;
   text-transform: capitalize;
+}
+
+.ourServices {
+  background: linear-gradient(#f9f9f975, #f9f9f940), url(../images/leaf-our-service.png);
+  background-position: center center;
+  background-size: cover;
+}
+.ourServices__container .h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--titles);
+  text-transform: uppercase;
+}
+.ourServices__content {
+  justify-content: center;
+}
+.ourServices__box {
+  padding: 2.5rem 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  row-gap: 2rem;
+  text-align: center;
+}
+.ourServices__box__text {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+.ourServices__box__text span {
+  font-size: 1.8rem;
+  font-family: var(--titles);
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+.ourServices__box__text--divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--orange);
+  margin: 0.5rem 0;
 }
 
 .title {

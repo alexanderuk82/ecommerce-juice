@@ -1,0 +1,57 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixin" as *;
+
+.ourServices {
+  background: linear-gradient(#f9f9f975, #f9f9f940),
+    url(../images/leaf-our-service.png);
+  @extend %ptblg;
+  background-position: center center;
+  background-size: cover;
+
+  &__container {
+    @extend %container;
+    @extend %ptblg;
+    .h3 {
+      text-align: center;
+      @include fontStyle(h3, bold, normal);
+    }
+  }
+
+  &__content {
+    @extend %mTopmd;
+    @extend %dGrid;
+    @extend %gridResponsiveCateg;
+    justify-content: center;
+  }
+
+  &__box {
+    padding: 2.5rem 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    row-gap: 2rem;
+    text-align: center;
+
+    &__text {
+      text-transform: uppercase;
+      font-size: map-get($fontSize, product);
+
+      span {
+        font-size: 1.8rem;
+        font-family: var(--titles);
+        font-weight: bold;
+        margin-right: 0.5rem;
+      }
+
+      &--divider {
+        width: 100%;
+        height: 1px;
+        background-color: var(--orange);
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}
