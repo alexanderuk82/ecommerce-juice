@@ -1,0 +1,103 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixin" as *;
+
+.news {
+  position: relative;
+  &__container {
+    @extend %container;
+  }
+
+  &__slide > .owl-dots {
+    display: none;
+  }
+  &__slide > .owl-nav {
+    position: absolute;
+    top: -46px;
+    right: 2.6rem;
+
+    & > * {
+      &:not(:last-child) {
+        margin-right: 1.8rem !important;
+      }
+    }
+  }
+
+  &__slide button.owl-prev span,
+  &__slide button.owl-next span {
+    font-size: 29px;
+    color: var(--fields);
+  }
+  &__slide button.owl-prev,
+  &__slide button.owl-next {
+    background-color: #fff !important;
+  }
+
+  &__article {
+    width: 86%;
+    display: flex;
+    height: 18rem;
+    @extend %container;
+    @extend %mTopsm;
+    position: relative;
+    padding-left: 3.8rem;
+    &::before {
+      content: "";
+      width: 13.8rem !important;
+      height: 74%;
+      background-color: #fff;
+      border: 8px solid var(--orange);
+      top: 0;
+      left: 2.8rem;
+      position: absolute;
+      border-radius: 8px;
+    }
+  }
+  &__image {
+    width: 13.8rem !important;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+
+  &__content {
+    width: 22rem;
+    background-color: #fff;
+    position: absolute;
+    right: 0.8rem;
+    padding: 1.2rem 1.1rem;
+    top: 0.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+  }
+
+  &__title {
+    font-size: 1.3rem;
+    font-family: var(--titles);
+    font-weight: bold;
+  }
+
+  &__details {
+    @extend %dflex;
+    margin-bottom: 1.3rem;
+    margin-top: 0.8rem;
+    list-style: none;
+  }
+
+  &__item {
+    font-size: 1.2rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--links-footer);
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+  }
+
+  &__readmore {
+    text-decoration: none;
+    color: map-get($fontColor, g);
+    text-transform: capitalize;
+  }
+}

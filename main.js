@@ -1,8 +1,8 @@
 "use strict";
 
-// Initializing the owl carrousel
+// Initializing the owl carrousel header
 
-$(".owl-carousel").owlCarousel({
+$(".header__slider").owlCarousel({
   stagePadding: 30,
   loop: true,
   margin: 10,
@@ -16,6 +16,45 @@ $(".owl-carousel").owlCarousel({
     },
     1000: {
       items: 5,
+    },
+  },
+});
+// Initializing the owl carrousel news blog
+
+// $(".news__slide").owlCarousel({
+//   loop: true,
+//   margin: 20,
+//   nav: false,
+//   responsive: {
+//     0: {
+//       items: 2,
+//     },
+//     500: {
+//       items: 2,
+//     },
+//     1000: {
+//       items: 5,
+//     },
+//   },
+// });
+
+$(".news__slide").owlCarousel({
+  loop: true,
+  responsiveClass: true,
+  mergeFit: 10,
+
+  responsive: {
+    0: {
+      items: 1,
+      nav: true,
+    },
+    600: {
+      items: 3,
+      nav: false,
+    },
+    1000: {
+      items: 5,
+      nav: true,
     },
   },
 });
