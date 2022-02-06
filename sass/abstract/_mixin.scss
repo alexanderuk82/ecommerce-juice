@@ -1,182 +1,173 @@
 @use "../abstract/variables" as *;
-
 //COLOR BACKGROUND SLIDER
-
 @mixin background($slide) {
-  @if $slide == 1 {
-    background: linear-gradient(var(--gradient-orange));
-  }
-  @if $slide == 2 {
-    background: linear-gradient(var(--gradient-green));
-  }
+    @if $slide==1 {
+        background: linear-gradient(var(--gradient-orange));
+    }
+    @if $slide==2 {
+        background: linear-gradient(var(--gradient-green));
+    }
 }
 
 //CONTENT SLIDER
 @mixin contentSlider($slider) {
-  p {
-    @include fontStyle(smallTxt, regular, w);
-  }
-  .h2 {
-    @include fontStyle(h2, bold, w);
-  }
-
-  @if $slider == 1 {
-    .h1 {
-      @include fontStyle(h1, bold, g);
+    p {
+        @include fontStyle(smallTxt, regular, w);
     }
-  }
-  @if $slider == 2 {
-    .h1 {
-      @include fontStyle(h1, bold, o);
+    .h2 {
+        @include fontStyle(h2, bold, w);
     }
-  }
+    @if $slider==1 {
+        .h1 {
+            @include fontStyle(h1, bold, g);
+        }
+    }
+    @if $slider==2 {
+        .h1 {
+            @include fontStyle(h1, bold, o);
+        }
+    }
 }
 
 // GENERAL FONT MANAGEMENT
 @mixin fontStyle($name, $Weight, $color) {
-  font-size: map-get($fontSize, $name);
-  font-weight: map-get($fontWeight, $Weight);
-
-  @if $color == main {
-    color: var(--links-menu);
-  }
-
-  @if $name == h1 {
-    font-family: var(--titles);
-    text-transform: uppercase;
-    color: map-get($fontColor, $color);
-    line-height: 3.42rem;
-  }
-  @if $name == h2 {
-    font-family: var(--titles);
-    text-transform: uppercase;
-    color: map-get($fontColor, $color);
-  }
-  @if $name == h4 {
-    font-family: var(--titles);
-    text-transform: uppercase;
-    color: map-get($fontColor, $color);
-  }
-
-  @if $name == h3 {
-    font-family: var(--titles);
-    text-transform: uppercase;
-    color: map-get($fontColor, $color);
-  }
-
-  @if ($name == smallTxt) {
-    font-family: var(--smallTitles);
-    text-transform: capitalize;
-    color: map-get($fontColor, $color);
-  }
-
-  @if ($name == boxTxt) {
-    font-family: var(--main-font);
-    color: map-get($fontColor, $color);
-    font-style: map-get($fontStyle, $Weight);
-    line-height: 2rem;
-    z-index: 10;
-  }
+    font-size: map-get($fontSize, $name);
+    font-weight: map-get($fontWeight, $Weight);
+    @if $color==main {
+        color: var(--links-menu);
+    }
+    @if $name==h1 {
+        font-family: var(--titles);
+        text-transform: uppercase;
+        color: map-get($fontColor, $color);
+        line-height: 3.42rem;
+    }
+    @if $name==h2 {
+        font-family: var(--titles);
+        text-transform: uppercase;
+        color: map-get($fontColor, $color);
+    }
+    @if $name==h4 {
+        font-family: var(--titles);
+        text-transform: uppercase;
+        color: map-get($fontColor, $color);
+    }
+    @if $name==h3 {
+        font-family: var(--titles);
+        text-transform: uppercase;
+        color: map-get($fontColor, $color);
+    }
+    @if ($name==smallTxt) {
+        font-family: var(--smallTitles);
+        text-transform: capitalize;
+        color: map-get($fontColor, $color);
+    }
+    @if ($name==boxTxt) {
+        font-family: var(--main-font);
+        color: map-get($fontColor, $color);
+        font-style: map-get($fontStyle, $Weight);
+        line-height: 2rem;
+        z-index: 10;
+    }
 }
 
 //NOTIFICATIONS CART AND WHISLIST
-
 @mixin notify {
-  :after {
-    content: "0";
-    background-color: var(--green);
-    height: 1.5rem;
-    width: 1.5rem;
-    color: #fff;
-    border: 1px solid var(--light-gray);
-    display: flex;
-    align-items: center;
-    @include fontStyle(small, regular, main);
-    border-radius: 100%;
-    position: absolute;
-    top: 9px;
-    right: -1rem;
-    justify-content: center;
-  }
+     :after {
+        content: "0";
+        background-color: var(--green);
+        height: 1.5rem;
+        width: 1.5rem;
+        color: #fff;
+        border: 1px solid var(--light-gray);
+        display: flex;
+        align-items: center;
+        @include fontStyle(small, regular, main);
+        border-radius: 100%;
+        position: absolute;
+        top: 9px;
+        right: -1rem;
+        justify-content: center;
+    }
 }
 
 // Different control of BTNS
-
 @mixin button($name) {
-  padding: 1rem;
-  text-transform: uppercase;
-  font-size: map-get($fontSize, small);
-  border: none;
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  @if $name == slider {
-    background-color: var(--orange);
-    color: #fff;
-  }
-  @if $name == main {
-    background-color: #fff;
-    color: map-get($fontColor, g);
-  }
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: map-get($fontSize, small);
+    border: none;
+    &:hover {
+        cursor: pointer;
+    }
+    @if $name==slider {
+        background-color: var(--orange);
+        color: #fff;
+    }
+    @if $name==main {
+        background-color: #fff;
+        color: map-get($fontColor, g);
+    }
+    @if $name==submit {
+        background-color: var(--green);
+        color: map-get($fontColor, w);
+        width: 100%;
+        font-family: inherit;
+        font-weight: bold;
+    }
 }
 
 //BOXES CATEGORIES
-
 @mixin categories($box) {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
-
-  &::after {
-    content: "";
-    top: 0;
-    left: 0;
-    opacity: 0.78;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-  }
-  @if $box == 1 {
-    background-image: url(../images/dessert.jpg);
-
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
     &::after {
-      background-color: var(--fruit-box);
+        content: "";
+        top: 0;
+        left: 0;
+        opacity: 0.78;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
     }
-  }
-  @if $box == 2 {
-    background-image: url(../images/vegi-salad.jpg);
-
-    &::after {
-      background-color: var(--vegi-box);
+    @if $box==1 {
+        background-image: url(../images/dessert.jpg);
+        &::after {
+            background-color: var(--fruit-box);
+        }
     }
-  }
-  @if $box == 3 {
-    background-image: url(../images/fast-food.jpg);
-
-    &::after {
-      background-color: var(--ffood-box);
+    @if $box==2 {
+        background-image: url(../images/vegi-salad.jpg);
+        &::after {
+            background-color: var(--vegi-box);
+        }
     }
-  }
-  @if $box == 4 {
-    background-image: url(../images/dessert.jpg);
-
-    &::after {
-      background-color: var(--dessert-box);
+    @if $box==3 {
+        background-image: url(../images/fast-food.jpg);
+        &::after {
+            background-color: var(--ffood-box);
+        }
     }
-  }
+    @if $box==4 {
+        background-image: url(../images/dessert.jpg);
+        &::after {
+            background-color: var(--dessert-box);
+        }
+    }
 }
+
 
 /*
 !Create Random stars review for products
 
 !TESTING
 */
+
 // @mixin star {
 //   .zmdi.zmdi-star:before {
 //     content: "\f27d";
@@ -185,18 +176,13 @@
 //     content: "";
 //   }
 // }
-
 // // $min: 1;
 // // $max: 5;
-
 // // @function randomStar($min, $max) {
 // //   $rand: random();
-
 // //   $randomStar: $min + floor($rand * (($max - $min) + 1));
-
 // //   @return $randomStar;
 // // }
-
 // @mixin generateStar($min, $max) {
 //   @for $i from $min through $max {
 //     @include star;

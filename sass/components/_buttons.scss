@@ -1,12 +1,15 @@
 @use "../abstract/variables" as *;
 @use "../abstract/mixin" as *;
-
 .btn__slider {
-  @include button(slider);
-  z-index: 10;
+    @include button(slider);
+    z-index: 10;
 }
 
 .btn__main {
-  @include button(main);
-  z-index: 10;
+    @include button(main);
+    z-index: 10;
+}
+
+.btn__submit {
+    @include button(submit);
 }

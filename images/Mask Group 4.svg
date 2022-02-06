@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="878" viewBox="0 0 390 878">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_6" data-name="Rectangle 6" width="390" height="878" transform="translate(0 5395)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(0 -5395)" clip-path="url(#clip-path)">
+    <g id="Footer" transform="translate(-458.112 5395.095)">
+      <rect id="bg" width="1366.41" height="877.905" transform="translate(56.702)" fill="#333"/>
+      <g id="News-Letter" transform="translate(488.112 576.105)">
+        <g id="Button" transform="translate(9.905 156.669)">
+          <rect id="bg-2" data-name="bg" width="241.023" height="33.515" transform="translate(0 0)" fill="#80b435"/>
+          <text id="Submit" transform="translate(117.463 20.855)" fill="#fff" font-size="12" font-family="Roboto-Bold, Roboto" font-weight="700" letter-spacing="0.025em"><tspan x="-19.986" y="0">Submit</tspan></text>
+        </g>
+        <g id="Email" transform="translate(9.905 114.014)">
+          <g id="bg-3" data-name="bg" transform="translate(0 0)" fill="#444" stroke="#999" stroke-linejoin="round" stroke-width="1">
+            <rect width="241.023" height="33.515" stroke="none"/>
+            <rect x="0.5" y="0.5" width="240.023" height="32.515" fill="none"/>
+          </g>
+          <text id="Email-2" data-name="Email" transform="translate(17.609 22.156)" fill="#999" font-size="13" font-family="Roboto-Regular, Roboto" letter-spacing="0.025em"><tspan x="0" y="0">Email</tspan></text>
+        </g>
+        <g id="Name" transform="translate(9.905 71.358)">
+          <g id="bg-4" data-name="bg" transform="translate(0 0)" fill="#444" stroke="#999" stroke-linejoin="round" stroke-width="1">
+            <rect width="241.023" height="33.515" stroke="none"/>
+            <rect x="0.5" y="0.5" width="240.023" height="32.515" fill="none"/>
+          </g>
+          <text id="Name-2" data-name="Name" transform="translate(17.609 21.156)" fill="#999" font-size="12" font-family="Roboto-Regular, Roboto" letter-spacing="0.025em"><tspan x="0" y="0">Name</tspan></text>
+        </g>
+        <text id="Subscribe_To_Our_Newsletter..." data-name="Subscribe To Our Newsletter..." transform="translate(13.207 53.905)" fill="#999" font-size="13" font-family="Roboto-Regular, Roboto" letter-spacing="0.025em"><tspan x="0" y="0">Subscribe To Our Newsletter...</tspan></text>
+        <g id="Heading" transform="translate(0 -2)">
+          <text id="NEWS_LETTER" data-name="NEWS LETTER" transform="translate(12.106 18.047)" fill="#fff" font-size="16" font-family="Signika-Bold, Signika" font-weight="700" letter-spacing="0.025em"><tspan x="0" y="0">NEWS LETTER</tspan></text>
+          <rect id="hr-02" width="2.201" height="25.39" fill="#80b435"/>
+        </g>
+      </g>
+      <g id="Our-Services" transform="translate(695.905 335.9)">
+        <text id="Online_Shopping_Free_Home_Delivery_Return_Money_Delivery_on_Place_Wishlist_Discount" data-name="Online Shopping
+Free Home Delivery
+Return Money
+Delivery on Place
+Wishlist
+Discount" transform="translate(14.307 55.921)" fill="#999" font-size="11" font-family="Roboto-Regular, Roboto" letter-spacing="0.025em"><tspan x="0" y="0">Online Shopping</tspan><tspan x="0" y="25">Free Home Delivery</tspan><tspan x="0" y="50">Return Money</tspan><tspan x="0" y="75">Delivery on Place</tspan><tspan x="0" y="100">Wishlist</tspan><tspan x="0" y="125">Discount</tspan></text>
+        <g id="Heading-2" data-name="Heading" transform="translate(0 0)">
+          <text id="OUR_SERVICES" data-name="OUR SERVICES" transform="translate(13.207 18.047)" fill="#fff" font-size="16" font-family="Signika-Bold, Signika" font-weight="700" letter-spacing="0.025em"><tspan x="0" y="0">OUR SERVICES</tspan></text>
+          <rect id="hr-02-2" data-name="hr-02" width="3.302" height="25.39" fill="#80b435"/>
+        </g>
+      </g>
+      <g id="Useful-Links" transform="translate(488.112 335.9)">
+        <text id="About_Us_Our_Products_Our_Service_Shop_News_Blog_Contact_Us" data-name="About Us
+Our Products
+Our Service
+Shop
+News Blog
+Contact Us" transform="translate(13.207 55.921)" fill="#999" font-size="11" font-family="Rockwell" letter-spacing="0.025em"><tspan x="0" y="0">About Us</tspan><tspan x="0" y="25">Our Products</tspan><tspan x="0" y="50">Our Service</tspan><tspan x="0" y="75">Shop</tspan><tspan x="0" y="100">News Blog</tspan><tspan x="0" y="125">Contact Us</tspan></text>
+        <g id="Heading-3" data-name="Heading" transform="translate(0 0)">
+          <text id="USEFUL_LINKS" data-name="USEFUL LINKS" transform="translate(12.106 18.047)" fill="#fff" font-size="16" font-family="Signika-Bold, Signika" font-weight="700" letter-spacing="0.025em"><tspan x="0" y="0">USEFUL LINKS</tspan></text>
+          <rect id="hr-01" height="222.419" fill="#555"/>
+          <rect id="hr-02-3" data-name="hr-02" width="2.201" height="25.39" fill="#80b435"/>
+        </g>
+      </g>
+      <g id="About-Info" transform="translate(488.112 76.494)">
+        <g id="Address" transform="translate(0 203.123)">
+          <text id="Level_13_2_Elizabeth_St_London_N12_8AB_United_Kingdom" data-name="Level 13, 2 Elizabeth St, London, N12 8AB, United Kingdom" transform="translate(21.154 11)" fill="#999" font-size="11" font-family="Roboto-Regular, Roboto" letter-spacing="0.025em"><tspan x="0" y="0">Level 13, 2 Elizabeth St, London, N12 8AB, United Kingdom</tspan></text>
+          <path id="Icon" d="M219.942,4822.267H222.4v3.414h3.093v-4.561h1.85L221.156,4816,215,4821.12h1.85v4.561h3.093Z" transform="translate(-215 -4813.656)" fill="#80b435"/>
+        </g>
+        <g id="Phone" transform="translate(202.099 162.168)">
+          <text id="_44_234_456_7891" data-name="(+44) 234 456 7891" transform="translate(21.901 11)" fill="#999" font-size="11" font-family="Roboto-Regular, Roboto" letter-spacing="0.025em"><tspan x="0" y="0">(+44) 234 456 7891</tspan></text>
+          <path id="Icon-2" data-name="Icon" d="M219.115,4785.955a.587.587,0,0,0,.188-.658,6.678,6.678,0,0,1-.308-2.3.6.6,0,0,0-.18-.443.666.666,0,0,0-.483-.211l-2.451-.076a.686.686,0,0,0-.481.181.591.591,0,0,0-.228.431,10.091,10.091,0,0,0,1.383,5.552,11.2,11.2,0,0,0,4.167,4.115,12.377,12.377,0,0,0,5.91,1.649.684.684,0,0,0,.481-.182.589.589,0,0,0,.228-.43l.083-2.262a.569.569,0,0,0-.2-.459.712.712,0,0,0-.467-.2,8.391,8.391,0,0,1-2.47-.439.636.636,0,0,0-.724.128l-1.588,1.369a9.819,9.819,0,0,1-4.451-4.4Z" transform="translate(-215.164 -4780.275)" fill="#80b435"/>
+        </g>
+        <g id="Email-3" data-name="Email" transform="translate(0.461 162.498)">
+          <text id="support_organic.com" data-name="support @organic.com" transform="translate(21.053 12)" fill="#999" font-size="11" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">support @organic.com</tspan></text>
+          <path id="Icon-3" data-name="Icon" d="M216.243,4750.655a1.253,1.253,0,0,0-.882.333,1.066,1.066,0,0,0-.361.814v6.828a1.067,1.067,0,0,0,.361.814,1.252,1.252,0,0,0,.882.333H226.1a1.253,1.253,0,0,0,.882-.333,1.068,1.068,0,0,0,.361-.814V4751.8a1.068,1.068,0,0,0-.361-.814,1.254,1.254,0,0,0-.882-.333Zm4.913,5.121-4.913-2.827V4751.8l4.913,2.854,4.942-2.854v1.146Z" transform="translate(-215 -4746.191)" fill="#80b435"/>
+        </g>
+        <text id="Lorem_Ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry._Lorem_Ipsum_has_been_the_industry_s_standard_dummy_text_ever_since_the_1500s_" data-name="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s," transform="translate(0.461 85.96)" fill="#999" font-size="13" font-family="Roboto-Regular, Roboto"><tspan x="15.764" y="12">Lorem Ipsum is simply dummy text of the printing and </tspan><tspan x="5.344" y="36">typesetting industry. Lorem Ipsum has been the industry&apos;s </tspan><tspan x="47.327" y="60">standard dummy text ever since the 1500s,</tspan></text>
+        <g id="Logo-white" transform="translate(0 0)">
+          <image id="logo" width="122.41" height="59.921" transform="translate(86.795 7)" xlink:href="data:image/png;base64,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"/>
+        </g>
+      </g>
+    </g>
+    <g id="Mini-Footer" transform="translate(-401.41 6222.219)">
+      <rect id="bg-5" data-name="bg" width="1364.981" height="68.781" transform="translate(0 -18)" fill="#161515"/>
+      <text id="Copyright_2022_Organic._All_rights_reserved._Designed_by_Alexander_B." data-name="Copyright  2022 Organic. All rights reserved. Designed by Alexander B." transform="translate(443.91 -1.284)" fill="#999" font-size="12" font-family="Roboto-Regular, Roboto" letter-spacing="0.025em"><tspan x="22.448" y="11">Copyright </tspan><tspan y="11" font-family="FontAwesome5Free-Regular, 'Font Awesome \35  Free'"></tspan><tspan y="11" xml:space="preserve"> 2022 </tspan><tspan y="11" fill="#80b435" font-family="Roboto-Bold, Roboto" font-weight="700">Organic.</tspan><tspan y="11" xml:space="preserve"> All rights reserved. </tspan><tspan x="80.624" y="30">Designed by </tspan><tspan y="30" fill="#80b435" font-family="Roboto-Bold, Roboto" font-weight="700">Alexander B.</tspan></text>
+    </g>
+  </g>
+</svg>

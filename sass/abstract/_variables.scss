@@ -1,136 +1,99 @@
 //    === CONFIGURE THE ROOT STYLES ==
 //
-
 :root {
-  //
-
-  //   DEFINING GENERAL FONTS
-
-  --main-font: "Roboto", sans-serif;
-  --titles: "Signika", sans-serif;
-  --smallTitles: "Gabriola", sans-serif;
-
-  //   DEFINING COLOURS FOR ALL THE PROJECT
-
-  --fruit-box: hsl(358, 90%, 65%);
-  --vegi-box: hsl(46, 89%, 52%);
-  --ffood-box: hsl(128, 59%, 51%);
-
-  --dessert-box: hsl(197, 74%, 51%);
-  --drink-box: hsl(351, 91%, 95%);
-
-  --green: hsl(85, 55%, 46%);
-  --orange: hsl(32, 93%, 59%);
-  --links-menu: hsl(0, 0%, 20%);
-
-  --mini-footer: hsl(0, 2%, 8%);
-  --fields: hsl(0, 0%, 27%);
-  --light-gray: hsl(0, 0%, 95%);
-  --links-footer: hsl(0, 0%, 60%);
-
-  --line: hsl(0, 0%, 88%);
-  --post: hsl(0, 0%, 40%);
-
-  --gradient-orange: #c57d0e 0%, #c67f10 18.4%, #cd8e1f 32.34%, #d39a26 74.19%,
-    #d09424 80.61%, #c88316 90.94%, #c07309 100%;
-
-  --gradient-green: #37c50e 0%, #5ec610 18.4%, #52cd1f 32.34%, #88d326 74.19%,
-    #7ad024 80.61%, #3ec816 90.94%, #09c01b 100%;
+    //
+    //   DEFINING GENERAL FONTS
+    --main-font: "Roboto", sans-serif;
+    --titles: "Signika", sans-serif;
+    --smallTitles: "Gabriola", sans-serif;
+    //   DEFINING COLOURS FOR ALL THE PROJECT
+    --fruit-box: hsl(358, 90%, 65%);
+    --vegi-box: hsl(46, 89%, 52%);
+    --ffood-box: hsl(128, 59%, 51%);
+    --dessert-box: hsl(197, 74%, 51%);
+    --drink-box: hsl(351, 91%, 95%);
+    --green: hsl(85, 55%, 46%);
+    --orange: hsl(32, 93%, 59%);
+    --links-menu: hsl(0, 0%, 20%);
+    --footer: hsl(0, 0%, 20%);
+    --mini-footer: hsl(0, 2%, 8%);
+    --fields: hsl(0, 0%, 27%);
+    --light-gray: hsl(0, 0%, 95%);
+    --links-footer: hsl(0, 0%, 60%);
+    --line: hsl(0, 0%, 88%);
+    --post: hsl(0, 0%, 40%);
+    --gradient-orange: #c57d0e 0%, #c67f10 18.4%, #cd8e1f 32.34%, #d39a26 74.19%, #d09424 80.61%, #c88316 90.94%, #c07309 100%;
+    --gradient-green: #37c50e 0%, #5ec610 18.4%, #52cd1f 32.34%, #88d326 74.19%, #7ad024 80.61%, #3ec816 90.94%, #09c01b 100%;
 }
 
-$fontWeight: (
-  "light": 300,
-  "regular": 400,
-  "medium": 500,
-  "bold": 700,
-  "extrabold": 900,
-);
-
-$fontStyle: (
-  "italic": italic,
-);
-
-$fontSize: (
-  "body": 1.5rem,
-  "product": 1.3rem,
-  "small": 1rem,
-  "price": 1.4rem,
-  "icons": 2.2rem,
-  "btnMenu": 3.4rem,
-  "smallTxt": 2.1rem,
-  "boxTxt": 1.5rem,
-  "h1": 4.4rem,
-  "h2": 2.7rem,
-  "h3": 2rem,
-  "h4": 1.6rem,
-);
-
-$fontColor: (
-  "w": #fff,
-  "g": var(--green),
-  "o": var(--orange),
-  "y": var(--vegi-box),
-);
-
+$fontWeight: ( "light": 300, "regular": 400, "medium": 500, "bold": 700, "extrabold": 900, );
+$fontStyle: ( "italic": italic, );
+$fontSize: ( "body": 1.5rem, "product": 1.3rem, "small": 1rem, "price": 1.4rem, "icons": 2.2rem, "btnMenu": 3.4rem, "smallTxt": 2.1rem, "boxTxt": 1.5rem, "h1": 4.4rem, "h2": 2.7rem, "h3": 2rem, "h4": 1.6rem, );
+$fontColor: ( "w": #fff, "g": var(--green), "o": var(--orange), "y": var(--vegi-box), );
 // GENERAL CLASSES
 %container {
-  padding: 1rem 3rem;
+    padding: 1rem 3rem;
 }
+
 %dflex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 %dflexCol {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 %dGrid {
-  display: grid;
+    display: grid;
 }
 
 %dFlexVerticalBox {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
 }
 
 %gridResponsiveCateg {
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
 }
 
 .mtbmd {
-  margin: 2rem 0;
+    margin: 2rem 0;
 }
+
 .mtblg {
-  margin: 5rem 0;
+    margin: 5rem 0;
 }
+
 .mtbxl {
-  margin: 9rem 0;
+    margin: 9rem 0;
 }
+
 .mtmd {
-  margin-top: 2rem;
+    margin-top: 2rem;
 }
 
 //Margin and space to use on @extend
-
 %mTopsm {
-  margin-top: 3rem;
+    margin-top: 2.5rem;
 }
+
 %mTopmd {
-  margin-top: 5rem;
+    margin-top: 5rem;
 }
 
 %mTopXl {
-  margin-top: 13rem;
+    margin-top: 13rem;
 }
 
 %ptblg {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
